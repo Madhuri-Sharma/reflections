@@ -1,0 +1,85 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    By having control-versions
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    in git it is very necessary to use the commit after every  changes you done in your file bcoz it will tell us about what u have updated. Then thru git diff command we can easily see the 2 version diff of file. And thru git log command we can easily see the log history of our commited task
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+   This happens bcoz in git as in 1 repository 2-3 files are there & which is interlinked with each other as for ex (html & Css are interlinked with each other) so whatever changes u do in this file that will be shown by command as (git log --stat):- which shows statistics of which files have changed in each comment
+
+How can you use the commands git log and git diff to view the history of files?
+
+   Using commands git log.Before using git log command it is very necessary to alter the path in which git is there by (cd asteroids/) so thru this we are able to see the history/ commits of log and able to take commit id from it.
+   Then e will use git diff id1 id2 : which show the list of adding & deletion of files
+
+How might using version control make you more confident to make changes that
+could break something?
+
+  using [git checkout id (commitid)] command we can able to see what changes have been made to that file  
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+cd ~ : thru this prompt will move to home dir
+mv Downloads/git.txt git.txt :- thru this file will move from downloaded sec to home dir.
+mv Downloads/git_prompt.sh git-prompt.sh
+mv Downloads/bash_profile_course .bashrc
+mv .bash_profile bash_profile
+ Then open the bash_profile file and add this line alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+ then save the file & write 
+ mv bash_profile .bash_profile
+
+
+Making Git configurations
+
+Run the following Git configuration commands. The first one will need to be modified if you are using a text editor other than Sublime, or if Sublime is installed in another location for you. See this page for the correct command for a couple of other popular text editors. For any other editor, you'll need to enter the command you use to launch that editor from the terminal.
+
+git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+(Instead of the first command, you may be able to use the simpler git config --global core.editor "subl -n -w" as shown in the video, but many students have found this does not work for them.)
+Restart the terminal
+
+You'll need to close and re-open the terminal before all your changes take effect.
+
+Q How can you use the staging area to make sure you have one commit per logical change?
+
+Q What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+ It will be able to tell us our previous changes whatever we do in our file.
+ Branches are useful for organising the work in project.
+master branch :Is ur production quality branch that never break always work.
+Development branch: Is the branch where active work is taking place on ur project.
+
+Q How do the diagrams help you visualize the branch structure?
+
+Q What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Q What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+-------------x-----------x------------------x---------------x-------------------------------------------------------------------------
+
+###Git Errors and Warnings Solution
+Should not be doing an octopus
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+Panic! (the 'impossible' happened)
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+Takeaway We hope these errors and warnings amused you as much as they amused us! Now that you know what kind of errors Git can throw, you’re ready to start checking out previous versions of files with Caroline.
+
+
